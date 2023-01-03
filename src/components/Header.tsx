@@ -1,9 +1,10 @@
 import React from 'react';
+import styles from '../../styles/Header.module.css'
 
-function Header(): React.ReactNode {
+function Header(): JSX.Element {
     return (
-        <header>
-            Header
+        <header className={styles.bar}>
+            <h1>Recently viewed trips</h1>
         </header>
     );
 }
