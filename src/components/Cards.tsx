@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from '../../styles/Cards.module.css'
+import { Cards } from '../../mocks/cardsMock';
+import CardItem from './CardItem';
 
-function Cards(): JSX.Element {
+function Cards({ cards }: { cards: Cards[]}): JSX.Element {
     return (
         <div className={styles.grid}>
-            <a className={styles.card}><h2>First card</h2></a>
-            <a className={styles.card}><h2>Second card</h2></a>
-            <a className={styles.card}><h2>Third card</h2></a>
+            { cards.map(CardItem)}
         </div>
     );
 }
