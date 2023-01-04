@@ -26,7 +26,7 @@ export const cards: Cards[] = [{
     price: '2.155',
     countriesCount: 2,
     days: 15,
-    image: '/EuropeanQuest.png'
+    image: '/SimplyItaly.png'
 },{
     id: 3,
     title: 'Italian Espresso',
@@ -35,5 +35,5 @@ export const cards: Cards[] = [{
     price: '1.465',
     countriesCount: 1,
     days: 10,
-    image: '/EuropeanQuest.png'
+    image: '/ItalianEspresso.png'
 }]

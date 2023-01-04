@@ -1,7 +1,6 @@
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(33.33%, auto));
-    width: var(--max-width);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     max-width: 100%;
     gap: 20px;
 }
@@ -11,13 +10,12 @@
     .grid {
         grid-template-columns: 1fr;
         margin-bottom: 120px;
-        max-width: 300px;
         text-align: center;
     }
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 801px) and (max-width: 1150px) {
+@media (min-width: 801px) and (max-width: 1200px) {
     .grid {
         grid-template-columns: repeat(2, 50%);
     }

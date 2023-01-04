@@ -7,7 +7,7 @@
     border: 1px solid rgba(var(--card-border-rgb), .15);
     overflow: hidden;
     transition: background 200ms, border 200ms;
-    width: 300px;
+    max-width: 400px;
 }
 
 .card span {
@@ -24,6 +24,11 @@
     margin: 0;
     font-size: 0.9rem;
     line-height: 1.5;
+}
+
+.info {
+    width: 100%;
+    padding: 0 15px;
 }
 
 /* Enable hover only on non-touch devices */
