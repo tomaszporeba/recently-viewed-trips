@@ -18,7 +18,7 @@ export const cards: Cards[] = [{
     countriesCount: 11,
     days: 25,
     image: '/EuropeanQuest.jpeg'
-},{
+}, {
     id: 2,
     title: 'Simply Italy',
     rating: 44,
@@ -27,7 +27,7 @@ export const cards: Cards[] = [{
     countriesCount: 2,
     days: 15,
     image: '/SimplyItaly.jpeg'
-},{
+}, {
     id: 3,
     title: 'Italian Espresso',
     rating: 45,

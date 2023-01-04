@@ -8,7 +8,7 @@ import { formatNumber } from '../utils/numberFormatter';
 function Cards(card: Cards): JSX.Element {
     const price = card.promoPrice ? card.promoPrice : card.price;
     const info = () => {
-        const countriesText = card.countriesCount > 1 ? 'Countries': 'Country';
+        const countriesText = card.countriesCount > 1 ? 'Countries' : 'Country';
         const daysText = card.days > 1 ? 'Days' : 'Day';
         return `${card.countriesCount} ${countriesText}, ${card.days} ${daysText}`
     }
