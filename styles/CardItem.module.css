@@ -8,22 +8,24 @@
     overflow: hidden;
     transition: background 200ms, border 200ms;
     max-width: 400px;
+    font-size: .7rem;
+    line-height: 1;
+    padding-bottom: 10px;
 }
 
 .card span {
-    display: inline-block;
-    transition: transform 200ms;
+    margin: 0;
 }
 
 .card h2 {
-    font-weight: 600;
+    font-size: 1.1rem;
     margin-bottom: 0.7rem;
 }
 
 .card p {
-    margin: 0;
-    font-size: 0.9rem;
-    line-height: 1.5;
+    margin-top: 5px;
+    display: inline-block;
+    opacity: .5;
 }
 
 .info {
@@ -31,14 +33,18 @@
     padding: 0 15px;
 }
 
-/* Enable hover only on non-touch devices */
+.price {
+    opacity: .5;
+}
+
+.price::before {
+    content: '\2022';
+    padding: 0 5px;
+}
+
 @media (hover: hover) and (pointer: fine) {
     .card:hover {
         background: rgba(var(--card-rgb), 0.1);
-    }
-
-    .card:hover span {
-        transform: translateX(4px);
     }
 }
 
@@ -46,9 +52,4 @@
     .card:hover span {
         transform: none;
     }
-}
-
-/* Mobile */
-@media (max-width: 700px) {
-
 }

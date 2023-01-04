@@ -3,7 +3,7 @@ import styles from '../../styles/Header.module.css'
 
 function Header(): JSX.Element {
     return (
-        <header className={styles.bar}>
+        <header className={styles.header}>
             <h1>Recently viewed trips</h1>
         </header>
     );

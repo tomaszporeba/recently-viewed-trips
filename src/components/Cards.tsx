@@ -5,9 +5,9 @@ import CardItem from './CardItem';
 
 function Cards({ cards }: { cards: Cards[]}): JSX.Element {
     return (
-        <div className={styles.grid}>
-            { cards.map(CardItem)}
-        </div>
+        <ul className={styles.grid}>
+            { cards.map((card) => <CardItem key={card.id} {...card}/>)}
+        </ul>
     );
 }
 

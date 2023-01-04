@@ -1,0 +1,33 @@
+.ratingContainer span{
+    opacity: 1;
+}
+
+.rating {
+    display: inline-block;
+    height: 25px;
+    position: relative;
+}
+
+.rating span {
+    font-size: .9rem;
+}
+
+.ratingUpper {
+    color: var(--rating-star-color);
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.ratingLower {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--rating-star-color);
+    padding: 0;
+    display: flex;
+    z-index: 0;
+}
