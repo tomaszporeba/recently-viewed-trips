@@ -6,7 +6,7 @@ export interface Cards {
     promoPrice?: number;
     countriesCount: number;
     days: number;
-    image: string;
+    image: { url: string; alt: string }
 }
 
 export const cards: Cards[] = [{
@@ -17,7 +17,7 @@ export const cards: Cards[] = [{
     price: 3385,
     countriesCount: 11,
     days: 25,
-    image: '/EuropeanQuest.jpeg'
+    image: {url: '/EuropeanQuest.jpeg', alt: 'European quest trip image'}
 }, {
     id: 2,
     title: 'Simply Italy',
@@ -26,7 +26,7 @@ export const cards: Cards[] = [{
     price: 2155,
     countriesCount: 2,
     days: 15,
-    image: '/SimplyItaly.jpeg'
+    image: {url: '/SimplyItaly.jpeg', alt: 'Simply italy trip image'}
 }, {
     id: 3,
     title: 'Italian Espresso',
@@ -35,5 +35,5 @@ export const cards: Cards[] = [{
     price: 1465,
     countriesCount: 1,
     days: 10,
-    image: '/ItalianEspresso.jpeg'
+    image: {url: '/ItalianEspresso.jpeg', alt: 'Italian espresso trip image'}
 }]
