@@ -21,7 +21,7 @@ export default function Home({cards}: Props) {
     )
 }
 
-export const getServerSideProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
     const response = await fetch('http://localhost:3000/api/cards')
     const cards = await response.json();
     return {
