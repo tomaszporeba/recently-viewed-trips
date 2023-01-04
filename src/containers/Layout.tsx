@@ -8,9 +8,6 @@ interface DesktopProps {
 function Layout({ children }: DesktopProps) {
     return (
         <div >
-            <Head>
-                <meta name="viewport" content="width=1280" />
-            </Head>
             <Header />
             {children}
         </div>
