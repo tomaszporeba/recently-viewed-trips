@@ -14,7 +14,7 @@ function Cards(card: Cards): JSX.Element {
     }
     return (
         <li className={styles.card}>
-            <Image alt="a" src={card.image} width={400} height={100} style={{
+            <Image alt="a" src={card.image} width={400} height={271} style={{
                 maxWidth: '100%',
                 height: 'auto',
                 paddingBottom: '5px'
